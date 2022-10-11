@@ -1,7 +1,7 @@
 /**
  * react-meta-tags - 1.0.1
  * Author : Sudhanshu Yadav
- * Copyright (c) 2016, 2020 to Sudhanshu Yadav, released under the MIT license.
+ * Copyright (c) 2016, 2022 to Sudhanshu Yadav, released under the MIT license.
  * https://github.com/s-yadav/react-meta-tags
  */
 
@@ -233,7 +233,7 @@ function (_Component) {
       var headComponent = React.createElement("div", {
         className: "react-head-temp"
       }, children);
-      ReactDOM.render(headComponent, this.temporaryElement, function () {
+      this.temporaryElement.render(headComponent, function () {
         var childStr = _this.temporaryElement.innerHTML; //if html is not changed return
 
         if (_this.lastChildStr === childStr) {
